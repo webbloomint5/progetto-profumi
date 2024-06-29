@@ -1,0 +1,47 @@
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
+.video-background {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+}
+
+.content {
+    position: relative;
+    z-index: 1;
+}
+
+.interactive {
+    position: relative;
+    cursor: pointer;
+}
+
+.hearts {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    display: none;
+}
+
+.hearts.show {
+    display: block;
+}
+
+@keyframes floatHearts {
+    0% { transform: translateY(0); opacity: 1; }
+    100% { transform: translateY(-50px); opacity: 0; }
+}
+
+.hearts {
+    width: 100px;
+    height: 100px;
+    top: -50px;
+    animation: floatHearts 2s infinite;
+}

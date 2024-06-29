@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prodotti - Sito Web di Profumi</title>
+    <!-- Collegamento al file CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- Inclusione di Tailwind CSS tramite CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.0.2/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #ff69b4; /* rosa shocking */
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr); /* 3 colonne per riga */
+            gap: 20px;
+        }
+        .card {
+            background-color: white;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .card img {
+            width: 100%;
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
+        .card h2 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+        .card p {
+            margin-bottom: 10px;
+        }
+        .card .price {
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: #ff69b4; /* rosa shocking */
+        }
+        .card .button {
+            background-color: #ff69b4; /* rosa shocking */
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .card .button:hover {
+            background-color: #d1599e; /* colore più scuro al passaggio */
+        }
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            background-color: #555555; /* grigio */
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+        .navbar a {
+            text-decoration: none;
+            color: white; /* bianco */
+            font-weight: bold;
+            padding: 8px 16px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+        .navbar a:hover {
+            background-color: #ff69b4; /* rosa shocking */
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="contatti.html">Contatti</a>
+    </div>
+
+    <div class="container">
+        <!-- Card 1 -->
+        <div class="card">
+            <img src="path/to/product1.jpg" alt="Prodotto 1">
+            <h2>Nome Prodotto 1</h2>
+            <p>Descrizione breve del prodotto 1.</p>
+            <p class="price">€19.99</p>
+            <button class="button">Aggiungi al carrello</button>
+        </div>
+        
+        <!-- Card 2 -->
+        <div class="card">
+            <img src="path/to/product2.jpg" alt="Prodotto 2">
+            <h2>Nome Prodotto 2</h2>
+            <p>Descrizione breve del prodotto 2.</p>
+            <p class="price">€24.99</p>
+            <button class="button">Aggiungi al carrello</button>
+        </div>
+        
+        <!-- Ripeti le cards fino a 12 -->
+        <!-- Card 3 -->
+        <!-- Card 4 -->
+        <!-- ... -->
+        <!-- Card 12 -->
+    </div>
+</body>
+</html>
